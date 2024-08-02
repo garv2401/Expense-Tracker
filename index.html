@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <h2>Expense Tracker</h2>
+      <form action="" id="expenseForm">
+        <input type="text" id="description" placeholder="Expense description" required/><br/>
+        <select name="" id="category" required>
+          <option value="">Select Category</option>
+          <option value="Food">Food</option>
+          <option value="Transportation">Transportation</option>
+          <option value="Utility">Utility</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Others">Others</option>
+        </select><br/>
+
+        <input type="number" id="amount" placeholder="Amount" required><br/>
+
+        <input type="submit" value="Add Expense">
+      </form>
+
+      <h3>Expense Summary</h3>
+      <table id="expenseTable">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody id="expenseList">
+
+        </tbody>
+
+      </table>
+
+    </div>
+    <div class="footer">
+      <input type="submit" id="clearSummary" value="Clear Summary">
+      <input type="submit" id="reloadHis" value="Reload History">
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
